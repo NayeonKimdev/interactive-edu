@@ -1,0 +1,26 @@
+# 프론트엔드 Dockerfile
+FROM node:18-alpine
+
+WORKDIR /app
+
+# 패키지 파일 복사
+COPY frontend/package*.json ./
+
+# 의존성 설치
+RUN npm ci --only=production
+
+# 소스 코드 복사
+COPY frontend/ ./
+
+# 빌드
+RUN npm run build
+
+# nginx 설정
+FROM nginx:alpine
+COPY --from=0 /app/build /usr/share/nginx/html
+COPY docker/nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+

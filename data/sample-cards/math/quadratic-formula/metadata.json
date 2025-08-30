@@ -1,0 +1,27 @@
+{
+  "id": "math-quadratic-function-complete-001",
+  "title": "Quadratic Function (이차함수)",
+  "subtitle": "Complete guide to quadratic functions: graph, properties, forms, and interactive visualization",
+  "category": "math",
+  "subcategory": "algebra",
+  "difficulty": "intermediate",
+  "description": "Comprehensive learning experience for quadratic functions f(x) = ax² + bx + c. Learn about graphs, zeros, y-intercepts, vertex, vertex form transformation, and discriminant analysis with interactive visualization.",
+  "tags": ["quadratic function", "quadratic equation", "quadratic formula", "graph", "zeros", "x-intercepts", "y-intercept", "vertex", "vertex form", "discriminant", "real-time calculation", "interactive", "parabola"],
+  "learning_objectives": [
+    "Understand and visualize quadratic function graphs",
+    "Find and understand zeros (x-intercepts)",
+    "Calculate y-intercepts",
+    "Find and analyze vertex (minimum/maximum point)",
+    "Transform between standard form and vertex form",
+    "Understand discriminant and its effect on roots",
+    "Observe how coefficients affect the graph in real-time",
+    "Master the relationship between different forms of quadratic functions"
+  ],
+  "prerequisites": ["basic-algebra", "function-basics"],
+  "estimated_time": 25,
+  "interactive": true,
+  "code_language": "python",
+  "created_at": "2024-08-29",
+  "updated_at": "2024-12-19T00:00:00Z",
+  "author": "Interactive Edu Platform"
+}

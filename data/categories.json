@@ -1,0 +1,115 @@
+{
+  "categories": [
+    {
+      "id": "math",
+      "name": "수학",
+      "description": "수학 관련 학습 카드들",
+      "icon": "calculate",
+      "color": "#2196F3",
+      "subcategories": [
+        {
+          "id": "calculus",
+          "name": "미적분학",
+          "description": "미분, 적분, 극한 등 미적분학 개념"
+        },
+        {
+          "id": "algebra",
+          "name": "대수학",
+          "description": "방정식, 부등식, 함수 등 대수학 개념"
+        },
+        {
+          "id": "geometry",
+          "name": "기하학",
+          "description": "평면도형, 공간도형, 벡터 등 기하학 개념"
+        },
+        {
+          "id": "statistics",
+          "name": "통계학",
+          "description": "확률, 통계, 데이터 분석 등"
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "name": "물리학",
+      "description": "물리학 관련 학습 카드들",
+      "icon": "science",
+      "color": "#FF9800",
+      "subcategories": [
+        {
+          "id": "mechanics",
+          "name": "역학",
+          "description": "운동학, 동역학, 정역학 등"
+        },
+        {
+          "id": "thermodynamics",
+          "name": "열역학",
+          "description": "열, 에너지, 엔트로피 등"
+        },
+        {
+          "id": "electromagnetism",
+          "name": "전자기학",
+          "description": "전기, 자기, 전자기파 등"
+        },
+        {
+          "id": "optics",
+          "name": "광학",
+          "description": "빛의 성질, 간섭, 회절 등"
+        }
+      ]
+    },
+    {
+      "id": "chemistry",
+      "name": "화학",
+      "description": "화학 관련 학습 카드들",
+      "icon": "science",
+      "color": "#4CAF50",
+      "subcategories": [
+        {
+          "id": "general",
+          "name": "일반화학",
+          "description": "원자, 분자, 화학결합 등"
+        },
+        {
+          "id": "organic",
+          "name": "유기화학",
+          "description": "탄소화합물, 반응메커니즘 등"
+        },
+        {
+          "id": "physical",
+          "name": "물리화학",
+          "description": "열화학, 전기화학, 반응속도 등"
+        }
+      ]
+    },
+    {
+      "id": "programming",
+      "name": "프로그래밍",
+      "description": "프로그래밍 관련 학습 카드들",
+      "icon": "code",
+      "color": "#9C27B0",
+      "subcategories": [
+        {
+          "id": "python",
+          "name": "Python",
+          "description": "Python 프로그래밍 언어"
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "description": "JavaScript 프로그래밍 언어"
+        },
+        {
+          "id": "algorithms",
+          "name": "알고리즘",
+          "description": "정렬, 검색, 그래프 알고리즘 등"
+        },
+        {
+          "id": "data-structures",
+          "name": "자료구조",
+          "description": "배열, 리스트, 트리, 그래프 등"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "math-linear-function-001",
+  "title": "Linear Function (일차함수)",
+  "subtitle": "Complete guide to linear functions: graph, properties, slope-intercept form, and interactive visualization",
+  "category": "math",
+  "subcategory": "algebra",
+  "difficulty": "beginner",
+  "description": "Comprehensive learning experience for linear functions f(x) = mx + b. Learn about graphs, slope, y-intercept, x-intercept, special cases, and real-world applications with interactive visualization.",
+  "tags": ["linear function", "slope", "y-intercept", "x-intercept", "graph", "algebra", "function", "interactive", "real-time calculation", "straight line", "constant function", "identity function"],
+  "learning_objectives": [
+    "Understand and visualize linear function graphs",
+    "Calculate and understand slope and its meaning",
+    "Find y-intercept and x-intercept",
+    "Analyze special cases: constant function, identity function, direct proportion",
+    "Understand how slope and y-intercept affect the graph",
+    "Apply linear functions to real-world problems",
+    "Observe how coefficients affect the graph in real-time",
+    "Master the relationship between different forms of linear functions"
+  ],
+  "prerequisites": ["basic-algebra", "function-basics", "coordinate-system"],
+  "estimated_time": 20,
+  "interactive": true,
+  "code_language": "python",
+  "created_at": "2024-12-19",
+  "updated_at": "2024-12-19T00:00:00Z",
+  "author": "Interactive Edu Platform",
+  "special_features": [
+    "Real-time slope and intercept calculation",
+    "Interactive coefficient adjustment",
+    "Multiple visualization modes",
+    "Special cases demonstration",
+    "Real-world application examples"
+  ],
+  "difficulty_indicators": {
+    "mathematical_concepts": "beginner",
+    "programming_skills": "beginner",
+    "visualization_understanding": "beginner"
+  }
+}

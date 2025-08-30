@@ -1,0 +1,24 @@
+{
+  "id": "math-inequalities-001",
+  "title": "부등식의 이해와 해결",
+  "subtitle": "일차 부등식과 이차 부등식을 해결하고 시각화하는 학습 카드",
+  "category": "math",
+  "subcategory": "algebra",
+  "difficulty": "intermediate",
+  "description": "일차 부등식과 이차 부등식을 해결하고, 수직선상 범위와 사분면에서의 영역을 시각화하는 학습 카드입니다.",
+  "tags": ["부등식", "일차부등식", "이차부등식", "수직선", "사분면", "해집합", "inequalities"],
+  "learning_objectives": [
+    "일차 부등식을 해결할 수 있다",
+    "이차 부등식을 해결할 수 있다",
+    "수직선상에서 부등식의 해집합을 표시할 수 있다",
+    "사분면에서 부등식의 영역을 시각화할 수 있다",
+    "복합 부등식과 절댓값 부등식을 이해할 수 있다"
+  ],
+  "prerequisites": ["basic-algebra", "linear-function", "quadratic-function"],
+  "estimated_time": 20,
+  "interactive": true,
+  "code_language": "python",
+  "created_at": "2024-01-01",
+  "updated_at": "2024-12-19T00:00:00Z",
+  "author": "Interactive Edu Platform"
+}
