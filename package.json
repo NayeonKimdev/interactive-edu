@@ -1,0 +1,27 @@
+{
+  "name": "interactive-edu",
+  "version": "1.0.0",
+  "description": "Interactive Educational Web Application",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "education",
+    "interactive",
+    "learning",
+    "web-app"
+  ],
+  "author": "GenSpark AI Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^4.5.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "pm2": "^6.0.8"
+  }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Edu - 인터랙티브 학습 플랫폼</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>🎓 Interactive Edu</h1>
+            </div>
+            <div class="nav-menu">
+                <button class="nav-item active" data-page="home">홈</button>
+                <button class="nav-item" data-page="quiz">퀴즈</button>
+                <button class="nav-item" data-page="flashcards">플래시카드</button>
+                <button class="nav-item" data-page="progress">학습 진도</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div id="home-page" class="page active">
+            <section class="hero">
+                <h2>🚀 재미있게 배우는 인터랙티브 학습</h2>
+                <p>다양한 학습 도구로 효과적인 공부를 시작하세요!</p>
+                <div class="feature-grid">
+                    <div class="feature-card" data-feature="quiz">
+                        <div class="feature-icon">🧠</div>
+                        <h3>스마트 퀴즈</h3>
+                        <p>AI가 제안하는 맞춤형 문제로 실력을 향상시키세요</p>
+                        <button class="btn btn-primary">퀴즈 시작</button>
+                    </div>
+                    <div class="feature-card" data-feature="flashcards">
+                        <div class="feature-icon">📚</div>
+                        <h3>플래시카드</h3>
+                        <p>암기가 필요한 내용을 효율적으로 학습하세요</p>
+                        <button class="btn btn-secondary">카드 보기</button>
+                    </div>
+                    <div class="feature-card" data-feature="progress">
+                        <div class="feature-icon">📊</div>
+                        <h3>학습 진도</h3>
+                        <p>체계적인 진도 관리로 목표를 달성하세요</p>
+                        <button class="btn btn-accent">진도 확인</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="quiz-page" class="page">
+            <section class="quiz-section">
+                <h2>🧠 스마트 퀴즈</h2>
+                <div class="quiz-container">
+                    <div class="quiz-header">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="quiz-progress"></div>
+                        </div>
+                        <span class="question-counter">문제 <span id="current-question">1</span> / <span id="total-questions">5</span></span>
+                    </div>
+                    <div class="quiz-content">
+                        <h3 id="question-text">JavaScript에서 변수를 선언하는 키워드는?</h3>
+                        <div class="options">
+                            <button class="option" data-answer="0">var</button>
+                            <button class="option" data-answer="1">let</button>
+                            <button class="option" data-answer="2">const</button>
+                            <button class="option" data-answer="3">모두 정답</button>
+                        </div>
+                    </div>
+                    <div class="quiz-controls">
+                        <button class="btn btn-secondary" id="prev-question">이전</button>
+                        <button class="btn btn-primary" id="next-question">다음</button>
+                    </div>
+                </div>
+                <div class="quiz-result" id="quiz-result" style="display: none;">
+                    <h3>🎉 퀴즈 완료!</h3>
+                    <p>점수: <span id="final-score">0</span> / <span id="max-score">5</span></p>
+                    <button class="btn btn-primary" id="restart-quiz">다시 시작</button>
+                </div>
+            </section>
+        </div>
+
+        <div id="flashcards-page" class="page">
+            <section class="flashcards-section">
+                <h2>📚 플래시카드</h2>
+                <div class="flashcard-container">
+                    <div class="flashcard" id="flashcard">
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front">
+                                <h3>HTML</h3>
+                                <p>클릭해서 뒤집어보세요 👆</p>
+                            </div>
+                            <div class="flashcard-back">
+                                <h3>HyperText Markup Language</h3>
+                                <p>웹 페이지의 구조를 정의하는 마크업 언어</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flashcard-controls">
+                        <button class="btn btn-secondary" id="prev-card">이전 카드</button>
+                        <span class="card-counter">카드 <span id="current-card">1</span> / <span id="total-cards">3</span></span>
+                        <button class="btn btn-secondary" id="next-card">다음 카드</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="progress-page" class="page">
+            <section class="progress-section">
+                <h2>📊 학습 진도</h2>
+                <div class="progress-dashboard">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">🎯</div>
+                            <div class="stat-content">
+                                <h3>완료한 퀴즈</h3>
+                                <p class="stat-number" id="completed-quizzes">0</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">📈</div>
+                            <div class="stat-content">
+                                <h3>평균 점수</h3>
+                                <p class="stat-number" id="average-score">0%</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🏆</div>
+                            <div class="stat-content">
+                                <h3>학습 시간</h3>
+                                <p class="stat-number" id="study-time">0분</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-section">
+                        <h3>🏅 달성한 배지</h3>
+                        <div class="achievements">
+                            <div class="achievement locked">
+                                <span class="achievement-icon">🥉</span>
+                                <span class="achievement-name">첫 퀴즈 완료</span>
+                            </div>
+                            <div class="achievement locked">
+                                <span class="achievement-icon">🥈</span>
+                                <span class="achievement-name">연속 학습 3일</span>
+                            </div>
+                            <div class="achievement locked">
+                                <span class="achievement-icon">🥇</span>
+                                <span class="achievement-name">완벽한 점수</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Interactive Edu. Made with ❤️ by GenSpark AI</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
